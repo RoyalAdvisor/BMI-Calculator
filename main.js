@@ -15,7 +15,7 @@ function sum() {
     }
     else (document.getElementById('gender').value == 'female');{
         let idealBmi = Math.round(0.5 * weight / (height / 100) ** 2 + 0.03 * age + 11);
-        document.getElementById('ideal-bmi').innerText = idealBmi
+        document.getElementById('ideal-bmi').innerHTML = idealBmi
     }
 }
 
