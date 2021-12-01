@@ -1,87 +1,164 @@
-* {
-    padding: 0;
+body {
+    background-color: rgb(57, 63, 236);
+}
+.bmi-container {
+    display: flex;
+    width: 60%;
+    position: relative;
+    left: 20vw;
+    top: 3vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );;
+}
+
+header > h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.bmi-heading {
+    font-size: 30px;
+    font-weight: 900;
     margin: 0;
 }
 
-.bmi-container {
-    background-color: yellow;
+.input-container {
+    box-sizing: border-box;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: auto;
-    position: relative;
-    top: 30vh;
-    width: 500px;
-    padding: 40px;
-    text-align: center;
-}
-
-.input-container {
-    width: 100%;
-}
-
-.input-container-2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.weight {
-    display: flex;
-    justify-content: start;
-    margin: 1em;
-    margin-bottom: 2em;    
-}
-
-.weight > label, input {
-    margin-right: 1em;
+    justify-content: left;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border: 5px solid #fff;
 
 }
 
 input {
+    font-size: 20px;
     border: none;
-    padding: 5px;
     background-color: #fff;
 }
 
-.height > label, input {
-    margin-right: 1.2em;
+.weight {
+    padding: 15px;
+    font-weight: 900;
+}
+
+.weight > label {
+    margin-right: 1rem;
 }
 
 .height {
-    display: flex;
-    justify-content: start;
-    margin: 1em;
+    padding: 20px;
+    font-weight: 900;
+}
+
+.height > label {
+    margin-right: 1rem;
+}
+
+.input-container-2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .gender {
-    display: flex;
-    justify-content: start;
-    margin: 1em;    
+    padding: 20px;
+    font-weight: 900;
 }
 
 .gender > label {
-    margin-right: 0.8em;
+    margin-right: 0.4rem;
 }
 
-.gender > select {
-    background-color: #fff;
-    border: none;
+.age {
+    padding: 20px;
+    font-weight: 900;
 }
 
+.age > label {
+    margin-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
 .result {
-    width: 100%;
+    width: 200px;
     padding: 10px;
-    border: none;
+    margin: 2rem auto;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background-color: #fff;
+    transition: 100ms ease-in-out;
+}
+
+.result:hover {
+    transform: scale(95%);
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+}
+
+.clear {
+    width: 200px;
+    padding: 10px;
+    margin: 2rem auto;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background-color: #fff;
+    transition: 100ms ease-in-out;
+}
+
+.clear:hover {
+    transform: scale(95%);
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
 }
 
 .output {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 1em;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 25px;
+    font-weight: 700;
 }
+
+.bmi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.ideal-bmi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.heading{
+    margin-right: 2rem;
+    font-size: 20px;
+}
+

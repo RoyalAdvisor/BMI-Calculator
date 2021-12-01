@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="bmi-container">
+    <div class="bmi-container" id="form">
         <header class="bmi-heading">
             <h2>
                 BMI Calculator
             </h2>
         </header>
         <header>
-            <h2>Please Enter Your WEIGHT, HEIGHT & GENDER</h2>
+            <h2>Please Enter Your Weight, Height & Gender (MALE) </h2>
+            <h2>Please Enter Your Weight, Height, Gender & Age (FEMALE) </h2>
         </header>
        <div class="input-container">
            <div class="weight">
                 <label for="weight">WEIGHT:</label>
-                <input type="text" id="weight" name="weight">
+                <input type="text" id="weight" name="weight" class="input">
                 Kilograms
            </div>
            <div class="height">
                 <label for="height">HEIGHT:</label>
-                <input type="text" id="height" name="height">
+                <input type="text" id="height" name="height" class="input">
                 IN CM
            </div>
            <div class="input-container-2">
                 <div class="gender">
                     <label for="gender">GENDER:</label>
-                    <select name="gender" id="gender">
+                    <select name="gender" id="gender" class="input" onclick="disable()">
                         <option value=""></option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -39,30 +40,29 @@
                 </div>
                 <div class="age">
                     <label for="age">AGE:</label>
-                    <input type="text" id="age" name="age">
+                    <input type="text" id="age" name="age" class="input">
                 </div>
            </div>
        </div>
        <button class="result" type="button" onclick="sum()">CALCULATE</button>
        <div class="output">
            <div class="bmi">
-                <label for="bmi">BMI:</label>
-                <div id="bmi"></div>
+               <div class="heading">
+                <h2>BMI:</h2>
+               </div>
+                <div id="bmi" class="input"></div>
            </div>
            <div class="ideal-bmi">
-                <label for="ideal-bmi">IDEAL BMI:</label>
-                <div id="ideal-bmi"></div>
+               <div class="heading">
+                <h2>Ideal BMI:</h2>
+               </div>
+                <div id="ideal-bmi" class="input"></div>
            </div>
         </div>
        <div class="buttons">
-        <button class="clear" type="button">CLEAR</button>
-        <button class="exit" type="button">EXIT</button>
+        <button class="clear" type="button" onclick="clearInputs()">CLEAR</button>
        </div>
-      
     </div>
-
-
-
 <script src="/main.js"></script>
 </body>
 </html>
