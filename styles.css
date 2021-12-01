@@ -162,3 +162,8 @@ input {
     font-size: 20px;
 }
 
+select {
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+}
